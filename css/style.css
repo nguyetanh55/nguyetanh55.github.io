@@ -1,14 +1,6 @@
-button {
-    background-color: white;
-    color: blue;
+#square {
+    background-color: red;
 
     width: 150px;
-    height: 45px;
-
-    line-height: 45px;
-    text-align: center;
-
-    border: 2px solid red;
-    border-top: none;
-    border-bottom: none;
+    height: 150px;
 }
