@@ -1,3 +1,14 @@
-h1 {
-    color: yellow;
+button {
+    background-color: white;
+    color: blue;
+
+    width: 150px;
+    height: 45px;
+
+    line-height: 45px;
+    text-align: center;
+
+    border: 2px solid red;
+    border-top: none;
+    border-bottom: none;
 }
