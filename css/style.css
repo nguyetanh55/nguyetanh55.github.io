@@ -1,7 +1,33 @@
-#circle {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(231, 150, 227);
+.navbar{
+    background-color: black;
 
-    border-radius: 50%;
+
+}
+.link {
+    color: white;
+    text-decoration: none;
+
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+
+    line-height: 30px;
+    text-align: center;
+
+
+} 
+.left-links{
+    display: inline-block;
+}
+.right-links{
+    display: inline-block;
+
+}
+.navbar{
+    position: relative;
+}
+.right-links{
+    position: absolute;
+    right: 0;
+    top: 0;
 }
