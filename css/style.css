@@ -1,33 +1,44 @@
-.navbar{
+.navbar {
     background-color: black;
-
-
+    position: relative;
 }
 .link {
     color: white;
     text-decoration: none;
-
     display: inline-block;
-    width: 80px;
-    height: 30px;
-
-    line-height: 30px;
-    text-align: center;
-
-
-} 
-.left-links{
+    padding: 10px 20px 10px 20px;
+}
+.navbar-left {
     display: inline-block;
 }
-.right-links{
+.navbar-right {
     display: inline-block;
-
-}
-.navbar{
-    position: relative;
-}
-.right-links{
     position: absolute;
     right: 0;
-    top: 0;
+}
+@media (max-wight: 900px) {
+    .link{
+        display: block;
+    }
+    .navbar-left {
+        display: block;
+    }
+    .navbar-right {
+        display: block;
+        position: static;
+    }
+    .navbar {
+        max-height: 40px;
+        overflow: hidden;
+    }
+    .navbar-indicator:checked + .navbar {
+        max-height: 400px;
+    }
+    .navbar-toggler {
+        color: white;
+        display: inline-block;
+        padding: 10px 20px 10px 20px;
+        position: absolute;
+        right: 0;
+    }
 }
