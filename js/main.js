@@ -1,11 +1,19 @@
-var dropdown = document.getElementById('dropdown');
+class Person {
+    name;
+    age;
 
-var hideBtn = document.getElementById('hide-btn');
-hideBtn.addEventListener('click', function(event) {
-    dropdown.className = 'dropdown';
-});
+    constructor(argName, argAge) {
+        this.name = argName;
+        this.age = argAge;
+    }
 
-var showBtn = document.getElementById('show-btn');
-showBtn.addEventListener('click', function(event) {
-    dropdown.className = 'dropdown show';
-});
+    greet() {
+        return "I'm" + this.name;
+    }
+}
+
+var semi = new Person("Semi_Dev", 35);
+var anh = new Person("Nguyet Anh", 19);
+
+console.table(semi);
+console.table(anh);
