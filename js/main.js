@@ -1,19 +1,38 @@
-class Person {
-    name;
-    age;
+// truy xuat chieu cao
+// truy xuat can nang
+// tinh toan bmi
+// tinh toan ket qua
+// hien bang thong bao
 
-    constructor(argName, argAge) {
-        this.name = argName;
-        this.age = argAge;
+var btn = document.querySelector('button');
+btn.addEventListener('click', function(event) {
+    var height = document.getElementById("height").value;
+    height = Number.parseFloat(height);
+    
+    var weight = document.getElementById("weight").value;
+    weight = Number.parseFloat(weight);
+    
+    var bmi = weight / (height * height);
+    var result = "";
+
+    if (bmi < 18.5) {
+        result = "Thieu can";
+    }
+    else if(bmi <= 22.9) {
+        result = "Binh thuong";
+    }
+    else if(bmi <= 24.9){
+        result = "thua can";
+    }
+    else if(bmi <= 25.9) {
+        result = "Beo phi I";
+    }
+    else if(bmi <= 34.9) {
+        result = "Beo phi II";
+    }
+    else{
+        result = "Beo phi III";
     }
 
-    greet() {
-        return "I'm" + this.name;
-    }
-}
-
-var semi = new Person("Semi_Dev", 35);
-var anh = new Person("Nguyet Anh", 19);
-
-console.table(semi);
-console.table(anh);
+    window.alert(result);
+});
