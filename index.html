@@ -4,50 +4,82 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <article class="container">
-            <header>
-                <h1 style="font-size: 45px;">About Victoria Kirst</h1>
-                <p>Ny name is Victoria and i am <span class="myyellow">jolly</span>, <span class="myyellow">clumsy</span> and <span class="myyellow">four-eyes</span></p>
-            </header>
-            <section id="content">
-                <article>
-                    <h1>My classes this Quarter</h1>
-                    <ul>
-                        <li>CSE 451 - Operating System</li>
-                        <li>CSE 471 - Computer Design and Organization</li>
-                        <li>PHYS 121 - Physics: Mechanics</li>
-                        <li>CSE 498 - Research w/ Prof.Luis Ceze</li>
-                    </ul>
-                </article>
-                <article>
-                    <h1>My Favorite Movies</h1>
-                    <p> <i>(I actually don't watch too many movies, so...here goes!)</i></p>
-                    <ol>
-                        <li>The last 30 minutes of Forrest Gump (<ins class="nav">IMDB</ins>)</li>
-                        <li>Star Trek Episode V with Zazu (<ins class="nav">IMDB</ins>)</li>
-                        <li>Fight club (not really, but I've seen like 3 movies total so this is my 3rd fave by technicality) (<ins class="nav">IMDB</ins>)</li>
-                    </ol>
-                </article>
-                <article>
-                    <h1>My Moods</h1>
-                        Happy:
-                        <a href="" target="_blank">
-                            <img style="width: 150px; height: 200px;" src="img/happy.png" alt="Happy mood">
-                        </a>
-                        Sad: <a href="" target="_blank">
-                            <img style="width: 150px; height: 300px;" src="img/dog_sad.png" alt="Sad mood">
-                        </a>
-                </article>
-                <article>
-                    <h1>Fun fact about my neighbors</h1>
-                    <ul>
-                        <li>Sue Smith: <i>Efervescent</i>is a word that describes her.</li>
-                        <li>Bill Thomson: Loves playing <i>Yu-Gi-Oh</i></li>
-                    </ul>
-                </article>
-            </section>
-        
-        </article>
+        <div class="container">
+            <div class="header">
+                <h1> Dog D.Dog</h1>
+            </div>
+            <div class="block">
+                <div class="title"> About</div>
+                <div class="content">
+                    <p>Woof woof!</p>
+                    <p>Hi, I'm Dog. I love <ins style="color:blue; text-decoration: none; ">User Interface Design</ins> </p>
+                    <img src="img/anhcho.png" alt="" class="image">
+                </div>
+            </div>
+            <div class="block" class="tableinfor">
+                <div class="title">Courses</div>
+                <div class="content">
+                    <p>Here are some course i've take:</p>
+                    <table border="1" width="450" height="250" cellspacing="0">
+                        <tr class="navbar">
+                            <td >Course number</td>
+                            <td >Course title</td>
+                            <td >Taken</td>
+                        </tr>
+                        <tr>
+                            <td class="navbar" colspan="3">For credit</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">6.814</td>
+                            <td class="style2"> User Interface Design</td>
+                            <td class="style2">Spring 2014</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">6.034</td>
+                            <td> Artificial Intelligence</td>
+                            <td>Fall 2014</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">6.006</td>
+                            <td>Introduction to Algorithms</td>
+                            <td>Spring 2015</td>
+                        </tr>
+                        <tr>
+                            <td class="navbar" colspan="3">Listener</td>
+                        </tr>
+                        <tr>
+                            <td class="style2">6.867</td>
+                            <td>Machine Learning</td>
+                            <td>Summer 2014</td>
+                        </tr>
+                        <tr>
+                            <td class="style2">6.830</td>
+                            <td>Database Systems</td>
+                            <td>Spring 2014</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="block">
+                <div class="title">Interests</div>
+                <div class="content">
+                    <p> I am Interests in <strong>HCl</strong>, mems, and youtube video.</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="title">Submit Pet Infomation</div>
+                <div class="content">
+                    <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+                    <form action="">
+                        Name: <input type="text" name="name"/><br>
+                        Phylum: <input type="text"/><br>
+                        Gender: <input type="text"/><br>
+                        <button>Submit</button>
+  
+                    </form>
+                </div>
+            </div>
+        </div>
         
 
     </body>
