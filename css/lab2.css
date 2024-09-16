@@ -1,0 +1,23 @@
+*{
+    color: white;
+}
+.container{
+    margin: 0 auto;
+    background-color: #605A5A;
+}
+h1{
+    color: #5AB7D2;
+}
+.myyellow{
+    color: yellow;
+}
+.nav{
+    color: red;
+}
+img{
+    width: 150px;
+    height: 200px;
+
+    width: 150px;
+    height: 250px;
+}
